@@ -1,0 +1,218 @@
+body {
+  background-color: #0C122D;
+  background-image: url("images/bg-desktop.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: contain;
+  font-family: "Raleway";
+  height: 100vh;
+}
+
+.black-text {
+  color: black;
+}
+
+.white-text {
+  color: white;
+}
+
+.small-text {
+  font-size: 0.5rem;
+}
+
+.medium-text {
+  font-size: 0.7rem;
+}
+
+.large-text {
+  font-size: 1.2rem;
+}
+
+.bold-text {
+  font-weight: 700;
+}
+
+/* CONTENT */
+.big-cont {
+  display: flex;
+  justify-content: center;
+}
+
+.cont {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  height: 10rem;
+  margin-top: 15rem;
+}
+
+/* ICONS + LOGO BLOCK */
+.logo-icons-space {
+  background-color: #1D2C67;
+  border-radius: 10px 100px 10px 10px;
+  padding: 2.5rem 5rem 2.5rem 2rem;
+  margin: 0 1.5rem;
+}
+
+.logo {
+  width: 75%;
+  margin-bottom: 1.2rem;
+}
+
+.icons {
+  background-color: #0C122D;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 0.5rem 0 0;
+  width: 75%;
+}
+
+.icons-div {
+  display: flex;
+  justify-content: center;
+}
+
+/* STORAGE SPACE */
+.storage-space {
+  display: inline-block;
+  width: 60%;
+  position: relative;
+  bottom: 0.5rem;
+}
+
+.prog-space {
+  background-color: #1D2C67;
+  border-radius: 10px;
+  padding: 1.5rem 2rem;
+}
+
+.blank-space {
+  text-align: right;
+  padding: 0 2rem;
+}
+
+.storage-comment {
+  background-color: white;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  position: relative;
+  top: 1.2rem;
+}
+
+.med1, .med2, .space {
+  display: inline-block;
+}
+
+.med1 {
+  width: 7%;
+}
+
+.space {
+  width: 80%;
+}
+
+.med2 {
+  width: 10%;
+}
+
+.progressbar {
+  background-color: #0C122D;
+  border-radius: 13px;
+  /* (height of inner div)/2 + padding */
+  padding: 3px;
+  width: 100%;
+  height: 0.5rem;
+  margin: 0.2rem 0;
+}
+
+.progressbar>div {
+  background: rgb(255, 163, 153);
+  background: linear-gradient(90deg, rgba(255, 163, 153, 1) 0%, rgba(255, 77, 151, 1) 100%);
+  width: 81.5%;
+  /* Adjust with JavaScript */
+  height: 20px;
+  border-radius: 10px;
+  height: 0.5rem;
+}
+
+.attribution {
+  font-size: 10px;
+  text-align: center;
+  padding: 5rem;
+  color: #3E52A3;
+}
+
+.attribution a {
+  color: white;
+}
+
+@media (max-width: 1028px) {
+  body {
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: cover;
+    height: 100vh;
+  }
+}
+
+@media (max-width: 930px) {
+  .storage-comment {
+    display: inline-flex;
+    position: relative;
+    top: 8.5rem;
+  }
+
+  .blank-space {
+    text-align: center;
+  }
+
+  .cont {
+    flex-direction: column;
+  }
+
+  .big-cont {
+    flex-direction: row;
+  }
+
+  .attribution {
+    margin-top: 10rem;
+  }
+
+  .logo-icons-space {
+    width: 70%;
+  }
+
+  .storage-space {
+    width: 85%;
+    text-align: center;
+    margin-left: 5%;
+  }
+
+  .icon1, .icon2, .icon3 {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  .logo {
+    width: 60%;
+  }
+}
+
+@media (max-width: 829px) {
+  .med1, .med2, .space, .med {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .icons-div {
+    justify-content: flex-start;
+  }
+
+  .storage-space {
+    width: 100%;
+    text-align: center;
+    margin-left: 5%;
+  }
+}
